@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/aaartemPetrov/task4#readme",
   "devDependencies": {
-    "cypress": "^9.5.2"
+    "cypress": "^9.7.0"
+  },
+  "dependencies": {
+    "@zebrunner/javascript-agent-cypress": "file:../javascript-agent-cypress"
   }
 }

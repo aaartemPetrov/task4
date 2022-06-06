@@ -24,6 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+require('@zebrunner/javascript-agent-cypress/lib/commands/commands');
+
 Cypress.Commands.add('homePage', () => {
     cy.visit('/');
 })

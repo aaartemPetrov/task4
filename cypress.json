@@ -10,5 +10,20 @@
     "retries": {
         "runMode": 0,
         "openMode": 0
+    },
+    "reporter": "@zebrunner/javascript-agent-cypress",
+    "reporterOptions": {
+        "reportingServerHostname": "https://solvdaaapetrov.zebrunner.com",
+        "reportingServerAccessToken": "40BjxOZK5Nf9HdgMnAsWKtwc7Xyq5Zhjksx6rTjtpxtaEKi8Vq", 
+        "reportingProjectKey": "SVT",
+        "reportingRunEnvironment": "IDK",
+        "reportingRunBuild": "1.0",
+        "reportingRunDisplayName": "Split Video Task",
+        "reportingRunLocale": "en_US",
+        "reportingCiRunId": "",
+        "reportingSlackChannels": "",
+        "reportingEmailRecipients": "",
+        "reportingLoggingEnabled": true,
+        "reportingLoggingLevel": "debug"
     }
 }

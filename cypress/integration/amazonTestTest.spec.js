@@ -6,18 +6,18 @@ import { searchResultPage } from "../support/page/searchResultPage";
 const testData = require('../fixtures/testData.json');
 
 
-describe('Amazon test', () => {
+describe('Amazon testTESTtest', () => {
 
     beforeEach('visit home page', () => {
         homePage.visit();
     })
-    
-    it('Validate Home Page', () => {
+
+    it('Validate Home Page.', () => {
         homePage.validateHomePage();
         cy.log('Home page is valide.');
     })
 
-    it('Change language check', () => {
+    it('Change language check.', () => {
         homePage.getHeader().getTopMenu().clickAllMenuButton();
         homePage.saveChosenLanguageAsVar('oldLanguage');
         homePage.getHeader().getTopMenu().getAllMenu().clickLanguageButton();
@@ -32,15 +32,15 @@ describe('Amazon test', () => {
                 expect(oldLanguage).not.equal(newLanguage);
             })
         })
-       
+
     })
 
-    it('Search', () => {
+    it('Search.', () => {
         homePage.searchProduct(testData.searchedBrand);
         searchResultPage.getProducts().getTitles().should('contain', testData.searchedBrand);
     })
 
-    it('login', () => {
+    it('login.', () => {
         cy.amazonLogin(Cypress.env('email'), Cypress.env('password'));
         homePage.visit();
     })
